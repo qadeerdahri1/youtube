@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #e5e5e5;
+    color: black;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100px;
+}
+.nav .logo{
+    width: 12vw;
+    height: 10vw;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style-type: none;   
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 40px;
+    font-weight: 600;
+}
+.nav ul li i{
+    display: none;
+
+    
+}
+.nav .btn{
+    background-color: #FCA311;
+    padding: 13px 20px;
+    font-size: 1.2vw;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5vw;
+
+}
+.main{
+    width: 100%;
+    height: calc( 100% -100px);
+    display: flex;
+}
+.content{
+    width: 50%;
+    height: 100%;
+    margin: 8vw 20px;
+}
+.content h3{
+
+    font-weight: 600;
+    font-size: 2.5vw;
+}
+.content h2{
+    font-size: 3vw;
+    letter-spacing: 2px;
+    color: #FCA311;
+
+}
+.content p{
+    margin-top: 2vw;
+    padding-right: 30px;
+}
+.content .btn-learn{
+    margin-top: 4vw;
+    background-color: #FCA311;
+    padding: 16px 23px;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5vw;
+
+}
+.content2{
+    width: 50%;
+    height: 100%;
+    margin: 8vw 20px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+
+}
+.btn2   {
+    margin-top: 4vw;
+    background-color: #FCA311;
+    padding: 16px 23px;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 600;
+    border: none;
+    border-radius: 1vw;
+    display: none;
+}
+
+
+@media (max-width:600px) {
+    .nav{
+        height: 80px;
+
+    }
+    .nav .logo{
+        width: 30vw;
+        height: 30vw;
+    }
+    ul li a{
+        display: none;
+    }
+    .nav ul li i{
+        display: block;
+        font-size: 6vw;
+    }
+    .nav .btn{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+        height: calc(100% - 80px);
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .content h3{
+        font-size: 7vw;
+        display: inline;
+
+    }
+    .content h2{
+        font-size: 8.5vw;
+    }
+    .content p{
+        font-size: 3.2vw;
+        padding: 0  50px 0  0;
+        margin-top: 0;
+    }
+    .content .btn-learn{
+        padding: 12px 20px;
+        margin-top: 6vw;
+        font-size: 3.5vw;
+        border-radius: 1vw;
+    }
+    .content2{
+        width: 100%;
+        height: 100%;
+        margin: 8vw 0 0 0;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+    }
+    .content2 .btn2{
+        display: block;
+        margin: 0 0 0 20px;
+        padding: 12px 23px;
+        font-size: 3.5vw;
+    }
+}
